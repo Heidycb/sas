@@ -1,0 +1,15 @@
+/*-INDEX-*/
+.fila1 img{
+    transition: all 2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+/*-DESTINOS-*/
+.destino img{
+    transition: all 2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
