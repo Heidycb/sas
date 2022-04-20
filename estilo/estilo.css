@@ -1,0 +1,192 @@
+*{
+    padding:0%;
+    margin:auto;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62, 5%;
+    /*funciona como una unidad de medidad para el formato de la lestras y se asignan: 2rem, 3 rem, .. */
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Signika Negative', sans-serif;
+    background-color:#F4EEFF;
+}
+/*-----------------INDEX----------------*/
+/*-----Titulo-----------*/
+
+.titulo{
+    background: radial-gradient(circle, rgba(230,111,40,1) 0%, rgba(21,82,99,1) 0%, rgba(11,46,55,1) 74%, rgba(3,18,22,1) 99%);
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0%;
+    font-weight: bold;
+    
+}
+/*-----fila 1-----------*/
+.fila1{
+    background-color:#F55353;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    padding-top: 30px;
+    /*padding-left: 30px;
+    padding-right: ;*/
+}
+
+/*---Animaciones---*/
+.fila1 img{
+    transition: all 2s;
+}
+
+.fila1 img:hover{
+    transform: scale(1.1);
+}
+
+
+/*-----fila2-----------*/
+.fila2{
+    /*fondo*/
+    background-image:url("../multi/img5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border: 0%;
+    margin: 0%;
+    padding-top:95px;
+    padding-bottom: 95px;
+    filter: grayscale(55%);
+}
+
+.fila2 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 42px;
+}
+/*-----fila 3-----------*/
+.fila3{
+    background-color:white ;
+    color: black;
+    padding: 0%;
+
+}
+.fila3 p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top:15px;
+    font-size: 42px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+/*-----footer-----------*/
+.footer{
+    background-color: #155263;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: auto;
+    border: 0%;
+}
+/*------------------DESTINOS---------------*/
+.destino{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.destino h2{
+    font-weight: bold;
+}
+.destino p{
+    padding-top: 20px;
+}
+
+/*---Animaciones---*/
+.destino img{
+    transition: all 2s;
+}
+
+.destino img:hover{
+    transform: scale(1.1);
+}
+
+/*-------Formulario--------*/
+.subtitulo{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.contac{
+    padding: 5px 10%;
+    text-align: center;
+}
+
+.formulario {
+    margin: 20px;
+    background-attachment: fixed;
+    background-color: #E74C3C;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 200px;
+}
+
+@media(max-width: 575px){
+    .fila2 p{
+        color: black;
+}
+}
+
+@media(min-width: 576px) and (max-width: 768px){
+    .fila2 p{
+        color: black;
+}
+}
+
