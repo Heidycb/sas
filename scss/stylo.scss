@@ -10,7 +10,18 @@ html {
     margin:0%;
     box-sizing: border-box;
 }
+
+/*Variables*/
 @import "variables";
+
+/*---------MIXINS-----------*/
+@mixin flexbox ($flex, $content, $items){
+    display: $flex;
+    justify-content: $content;
+    align-items: $items;
+}
+
+/*----------BODY-------------------*/
 body {
     font-family: 'Signika Negative', sans-serif;
     background-color:$colordeFondo;
@@ -19,22 +30,24 @@ body {
 
 /*-----Titulo-----------*/
 @import "cabecera";
+
 /*-----fila 1-----------*/
 .fila1{
+    @include flexbox(flex, center, center);
     background-color:#F55353;
     color: white;
     padding-top: 10px;
     padding-bottom: 40px;
     padding-top: 40px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-
+    /*display: flex;
+    justify-content: map-get($estilos,centro);
+    text-align: map-get($estilos,centro);*/
     p{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
+        @include flexbox(flex, center, center);
+        /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
+        flex-direction: map-get($estilos,columna);
         color: white;
         font-size: 42px;
         padding-top: 30px;
@@ -57,9 +70,10 @@ body {
     filter: grayscale(55%);
   
     p{
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @include flexbox(flex, center, center);
+        /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
         color: white;
         font-size: 42px;
     }
@@ -73,9 +87,10 @@ body {
     padding: 0%;
 
     p{
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @include flexbox(flex, center, center);
+        /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
         padding-top:15px;
         font-size: 42px;
     }
@@ -83,22 +98,26 @@ body {
 
 /*-----footer-----------*/
 .footer{
-    background-color: $colorfooter;
-    color: white;
     display: flex;
     justify-content: center;
-    text-align: center;
+    text-align:center;
+    background-color: $colorfooter;
+    color: white;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: auto;
     border: 0%;
+
+    button{
+        width: 5%;}        
 }
 /*------------------DESTINOS---------------*/
 .destino{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(flex, center, center);
+    /*display: flex;
+    justify-content: map-get($estilos,centro);
+    align-items: map-get($estilos,centro);*/
+    flex-direction: map-get($estilos,columna);
     padding-top: 20px;
     padding-bottom: 5px;
 
@@ -113,10 +132,10 @@ body {
 /*-------VIDEO--------*/
 /*-INDEX Y DESTINOS-*/
 .video{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    @include flexbox(flex, center, center);
+    /*display: flex;
+    justify-content: map-get($estilos,centro);*/
+    @extend .espacio;
 }
 
 

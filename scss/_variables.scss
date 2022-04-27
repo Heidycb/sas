@@ -1,3 +1,38 @@
 $colorPrincipal:radial-gradient(circle, rgba(230,111,40,1) 0%, rgba(21,82,99,1) 0%, rgba(11,46,55,1) 74%, rgba(3,18,22,1) 99%);
 $colordeFondo:#F4EEFF;
 $colorfooter: rgba(21,82,99,1);
+
+/*------MAP--------------*/
+$redes: (
+    wp: #B4FF9F,
+    fb: #4B7BE5,
+    ig: #D77FA1,
+    gmail: #E04D01
+);
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }   
+}
+
+/*---------MAP GET-----------*/
+$estilos:(
+    columna: column
+    /*centro: center*/
+);
+
+/*---------EXTENDED-----------*/
+.espacio{
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+/*---------MIXINS-----------*/
+@mixin flexbox ($flex, $content, $items){
+    display: $flex;
+    justify-content: $content;
+    align-items: $items;
+}
+.fila1{
+    @include flexbox(flex, center, center)
+}

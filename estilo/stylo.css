@@ -10,6 +10,34 @@ html {
   margin: 0%;
   box-sizing: border-box; }
 
+/*Variables*/
+/*------MAP--------------*/
+.btn--wp {
+  background-color: #B4FF9F; }
+
+.btn--fb {
+  background-color: #4B7BE5; }
+
+.btn--ig {
+  background-color: #D77FA1; }
+
+.btn--gmail {
+  background-color: #E04D01; }
+
+/*---------MAP GET-----------*/
+/*---------EXTENDED-----------*/
+.espacio, .video {
+  padding-top: 20px;
+  padding-bottom: 25px; }
+
+/*---------MIXINS-----------*/
+.fila1 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*---------MIXINS-----------*/
+/*----------BODY-------------------*/
 body {
   font-family: 'Signika Negative', sans-serif;
   background-color: #F4EEFF; }
@@ -31,19 +59,25 @@ body {
 
 /*-----fila 1-----------*/
 .fila1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #F55353;
   color: white;
   padding-top: 10px;
   padding-bottom: 40px;
   padding-top: 40px;
-  display: flex;
-  justify-content: center;
-  text-align: center; }
+  /*display: flex;
+    justify-content: map-get($estilos,centro);
+    text-align: map-get($estilos,centro);*/ }
   .fila1 p {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
+    flex-direction: column;
     color: white;
     font-size: 42px;
     padding-top: 30px;
@@ -65,7 +99,10 @@ body {
   .fila2 p {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
     color: white;
     font-size: 42px; }
 
@@ -77,28 +114,36 @@ body {
   .fila3 p {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    /*display: flex;
+        justify-content: map-get($estilos,centro);
+        text-align: map-get($estilos,centro);*/
     padding-top: 15px;
     font-size: 42px; }
 
 /*-----footer-----------*/
 .footer {
-  background-color: #155263;
-  color: white;
   display: flex;
   justify-content: center;
   text-align: center;
+  background-color: #155263;
+  color: white;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: auto;
   border: 0%; }
+  .footer button {
+    width: 5%; }
 
 /*------------------DESTINOS---------------*/
 .destino {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*display: flex;
+    justify-content: map-get($estilos,centro);
+    align-items: map-get($estilos,centro);*/
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 5px; }
   .destino h2 {
@@ -111,8 +156,9 @@ body {
 .video {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 25px; }
+  align-items: center;
+  /*display: flex;
+    justify-content: map-get($estilos,centro);*/ }
 
 /*---Animaciones---*/
 /*-INDEX-*/
