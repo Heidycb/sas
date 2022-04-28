@@ -27,12 +27,4 @@ $estilos:(
     padding-bottom: 25px;
 }
 
-/*---------MIXINS-----------*/
-@mixin flexbox ($flex, $content, $items){
-    display: $flex;
-    justify-content: $content;
-    align-items: $items;
-}
-.fila1{
-    @include flexbox(flex, center, center)
-}
+
