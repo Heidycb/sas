@@ -138,6 +138,40 @@ body {
     @extend .espacio;
 }
 
+/*-------Contacto--------*/
+.subtitulo{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.contac{
+    padding: 5px 10%;
+    text-align: center;
+}
+
+.formulario {
+    margin: 20px;
+    background-attachment: fixed;
+    background-color: #E74C3C;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+    min-height: 100px;
+    min-width: 200px;
+}
 
 /*---Animaciones---*/
 @import "animaciones";
